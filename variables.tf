@@ -15,7 +15,7 @@ variable "instance_type" {
 
 variable "security_group" { 
     description = "Name of security group" 
-    default     = "sg-04cab238eaa3ee191" 
+    default     = "my-security-group.id" 
 }
 
 variable "tag_name" { 
@@ -39,7 +39,7 @@ variable "acl" {
 variable "bucket_prefix" {
     type        = string
     description = "(required since we are not using 'bucket') Creates a unique bucket name beginning with the specified prefix"
-    default     = "pr-bucket-2"
+    default     = "project-surya"
 }
 variable "tags" {
     type        = map
